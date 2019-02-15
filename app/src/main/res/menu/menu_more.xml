@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/actionbar_get"
+        android:orderInCategory="100"
+        android:title="显示源码"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/actionbar_clear"
+        android:orderInCategory="100"
+        android:title="清空内容"
+        app:showAsAction="never" />
+
+
+    <item
+        android:id="@+id/actionbar_save"
+        android:orderInCategory="100"
+        android:title="保存"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/actionbar_show"
+        android:orderInCategory="100"
+        android:title="回显"
+        app:showAsAction="never" />
+</menu>

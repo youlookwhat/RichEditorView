@@ -1,7 +1,7 @@
 ## RichEditorView
 基于WebView的富文本编辑器 - Android
 
-## functions
+## Supported Functions
 
  - Bold
  - Italic
@@ -49,6 +49,13 @@ richEditor.edAddProduct(123, new Gson().toJson(goodsBean));
 ```java
 richEditor.edOutdata(mTitle, mContent);
 ```
+<!--
+## Origin
+为什么会有此开源项目？
+
+-->
+
+
 ## Thanks
  - reference by [RichEditorWeb](https://github.com/dengdaoyus/RichEditorWeb)
 

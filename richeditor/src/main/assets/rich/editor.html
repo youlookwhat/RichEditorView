@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mobile Rich Editor</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div class="content">
+
+        <header>
+            <div class='imgbox'><img id="cover" onclick="window.RE.upimg()" src="https://img0.bevol.cn/UploadFile/find/0_0d394c19-64d2-48db-93e1-61fc3bfaded1.jpg">
+                <div id="mc"><button id="upimg" onclick="window.RE.upimg()">更换封面</button></div>
+            </div>
+            <input type="text" placeholder="请输入标题～" class="title" maxlength="15" oninput="window.RE.inputlength(value)" id="title">
+            <p id="idlengthbox" style=""><span id="idlength">0</span>/15</p>
+        </header>
+        <div class="line"></div>
+        <div id="editor" contenteditable="true"></div>
+    </div>
+
+    <script src="./richeditor.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+/* 文章显示的css样式 */
+*{
+    padding:0;
+    margin:0
+}
+body {
+    padding: 0 16px;
+}
+
+.rem {
+    display: none
+}
+p {
+    padding: 0;
+    margin: 0;
+    line-height:28px!important;
+    color:#323133
+
+}
+
+
+blockquote {
+    background: #FAFAFA;
+    padding: 10px 15px 10px 15px;
+    margin: 12px;
+    font-size: .8rem;
+    /* border-style: dotted dotted dotted solid; */
+    border-left-width: 4px!important;
+    border-width: 1px 1px 1px 1px;
+    border-color: #F2F2F2;
+    line-height: 200%;
+    word-break: break-all;
+}
+

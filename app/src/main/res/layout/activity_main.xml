@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/line_rootView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimaryDark"
+        app:subtitleTextAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:title="0字"
+        app:titleTextAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+        app:titleTextColor="#ffffff" />
+
+    <me.jingbin.richeditor.editrichview.SimpleRichEditor
+        android:id="@+id/rich_edit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lu_bottom_menu"
+        android:layout_below="@+id/toolbar"
+        android:scrollbars="none"
+        android:visibility="visible" />
+
+    <me.jingbin.richeditor.bottomlayout.LuBottomMenu
+        android:id="@+id/lu_bottom_menu"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
