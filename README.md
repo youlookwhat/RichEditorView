@@ -52,7 +52,7 @@ richEditor.edOutdata(mTitle, mContent);
 
 ## Demo
 gif演示图后期补上
-![](https://github.com/youlookwhat/RichEditorView/tree/master/file/richeditor.jpeg)
+![](https://github.com/youlookwhat/RichEditorView/blob/master/file/richeditor.jpeg)
 
 <!--
 ## Origin
