@@ -56,11 +56,15 @@ gif演示图后期补上
 <img width="300" height=“470” src="https://github.com/youlookwhat/RichEditorView/blob/master/file/richeditor.jpeg"></img>
 
 
-<!--
-## Origin
+
+## Project Origin
 为什么会有此开源项目？
 
--->
+公司准备在自己App内做编辑器模块，本来想用百度的开源编辑器，但是功能太复杂，参考了很多类似的编辑器都达不到项目需要的效果。结果发现了``RichEditorWeb``，基本功能都满足，就在此项目中做了修改，并运用到自己的项目中。感谢此项目的提供者。
+
+在移植到项目中时，出现很多问题(如键盘上面的布局不弹起)，为了解决这些问题并在其基础上扩展功能 花费了大量时间。在此特地将编辑器从项目中剥离出来，供后来的朋友参考借鉴。
+如有帮助，还请Star一下，支持一下作者，非常感谢~
+
 
 
 ## Thanks
