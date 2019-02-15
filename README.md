@@ -49,6 +49,11 @@ richEditor.edAddProduct(123, new Gson().toJson(goodsBean));
 ```java
 richEditor.edOutdata(mTitle, mContent);
 ```
+
+## Demo
+gif演示图后期补上
+![](https://github.com/youlookwhat/RichEditorView/tree/master/file/richeditor.jpeg)
+
 <!--
 ## Origin
 为什么会有此开源项目？
