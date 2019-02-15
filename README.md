@@ -20,30 +20,35 @@
 ## Setting for Editor
 
 获取标题和内容:
-``
+
+```java
 richEditor.edThishtml();
-``
+```
 
 添加封面图片:
-``
+
+```java
 richEditor.edUpcover(headerImageSrc);
-``
+```
 
 
 添加内容图片:
-``
+
+```java
 richEditor.edAddimgsrc(contentImageSrc);
-``
+```
 
 添加产品：
-``
+
+```java
 richEditor.edAddProduct(123, new Gson().toJson(goodsBean));
-``
+```
 
 回显内容：
-``
+
+```java
 richEditor.edOutdata(mTitle, mContent);
-``
+```
 ## Thanks
  - reference by [RichEditorWeb](https://github.com/dengdaoyus/RichEditorWeb)
 
