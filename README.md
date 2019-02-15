@@ -52,7 +52,8 @@ richEditor.edOutdata(mTitle, mContent);
 
 ## Demo
 gif演示图后期补上
-![](https://github.com/youlookwhat/RichEditorView/blob/master/file/richeditor.jpeg)
+<img width="173" height=“274” src="https://github.com/youlookwhat/RichEditorView/blob/master/file/richeditor.jpeg"></img>
+
 
 <!--
 ## Origin
