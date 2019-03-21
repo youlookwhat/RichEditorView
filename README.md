@@ -1,5 +1,5 @@
 ## RichEditorView
-基于WebView的富文本编辑器 - Android
+Android 基于WebView的富文本编辑器 - 仿简书编辑器
 
 ## Supported Functions
 
@@ -16,6 +16,12 @@
  - Redo
  - Insert Image
  - Insert Product(Custom layout)
+
+特点：
+
+ - 点击内容部分，键盘会将底部菜单栏弹起，点击标题则收起
+ - 文字会自动定位在菜单栏的上方
+ - 文字类型标识如加粗，删除线会根据光标位置自动改变
 
 ## Setting for Editor
 
@@ -50,11 +56,10 @@ richEditor.edAddProduct(123, new Gson().toJson(goodsBean));
 richEditor.edOutdata(mTitle, mContent);
 ```
 
-## Demo
-gif演示图后期补上
+## Screenshots
 
 <img width="300" height=“470” src="https://github.com/youlookwhat/RichEditorView/blob/master/file/richeditor.jpeg"></img>
-
+<img width="300" height=“470” src="https://github.com/youlookwhat/RichEditorView/blob/master/file/richeditor.gif"></img>
 
 
 ## Project Origin
