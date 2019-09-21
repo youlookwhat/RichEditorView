@@ -2,12 +2,14 @@ package me.jingbin.richeditor.editrichview.base;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.net.http.SslError;
 import android.os.Build;
 import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.webkit.JavascriptInterface;
 import android.webkit.JsResult;
+import android.webkit.SslErrorHandler;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
@@ -328,6 +330,12 @@ public abstract class RichEditor extends WebView {
             return super.shouldOverrideUrlLoading(view, url);
         }
 
+        // Android - WebView 加载 Https 出现 SSL Error. Failed to validate the certificate chain
+        @Override
+        public void onReceivedSslError(WebView view, SslErrorHandler handler, SslError error) {
+            handler.proceed(); //解决方案在此，不要调用super.xxxx
+        }
+
     }
 
     public long getContentLength() {
@@ -549,16 +557,7 @@ public abstract class RichEditor extends WebView {
     public void edAddimgsrc(String imgsrc) {
         exec("javascript:RE.saveRange();");
         exec("javascript:RE.addimgsrc('" + imgsrc + "');");
-        /** 解决 Android6.0 光标不下移，并且删除图片不能删除“✘图片”的问题；缺点是添加图片后没有了光标*/
-        postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                exec("javascript:RE.addLineLast();");
-                exec("javascript:RE.reduceRange();");
-            }
-        }, 1000);
         Log.e("imgsrc", imgsrc);
-
     }
 
     /**
