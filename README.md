@@ -49,6 +49,8 @@ richEditor.edOutdata(mTitle, mContent);  // 回显内容
 如有帮助，还请Star一下，支持一下作者，非常感谢~
 
 
+## Question
+ - 如果用户自己输入单个 英文单引号`'`，或双引号`"`，会回显不出来，因为html会识别为没有另一个`结束符`而报错。`chromium: [INFO:CONSOLE(1)] "Uncaught SyntaxError: missing ) after argument list", source: file:///android_asset/rich/editor.html (1)`
 
 ## Thanks
  - reference by [RichEditorWeb](https://github.com/dengdaoyus/RichEditorWeb)
